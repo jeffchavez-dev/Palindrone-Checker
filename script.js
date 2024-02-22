@@ -9,7 +9,9 @@ check.addEventListener('click', () => {
         const lowerCase = str.toLowerCase()
         const cleanStr = lowerCase.replace(/[^a-zA-Z0-9]/g, '');
         console.log(cleanStr)
-        return cleanStr.split('').reverse().join('');
+        const reverse = cleanStr.split('').reverse().join('');
+        console.log(reverse)
+        return 
     }
    switch (reverseString(inputValue)) {
         case "":
@@ -18,7 +20,7 @@ check.addEventListener('click', () => {
         case reverseString(inputValue):
             result.textContent = `${inputValue} is a palindrome`
             break;
-    default:
-        result.textContent = `${inputValue} is not a palindrome`
+        default:
+            result.textContent = `${inputValue} is not a palindrome`
    }
 })
