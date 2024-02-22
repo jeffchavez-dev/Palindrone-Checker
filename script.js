@@ -4,18 +4,18 @@ const result = document.getElementById("result")
 
 check.addEventListener('click', () => {
    let inputValue = input.value
-   let lowerCase = inputValue.toLowerCase()
    
    function reverseString(str) {
-        const replace = str.replace(/[^a-zA-Z0-9]/g, '');
-        console.log(replace)
-        return replace.split('').reverse().join('');
+        const lowerCase = str.toLowerCase()
+        const cleanStr = lowerCase.replace(/[^a-zA-Z0-9]/g, '');
+        console.log(cleanStr)
+        return cleanStr.split('').reverse().join('');
     }
-   switch (reverseString(lowerCase)) {
+   switch (reverseString(inputValue)) {
         case "":
-            result.textContent = "Please input a value"
+            alert("Please input a value")
             break;
-        case reverseString(lowerCase):
+        case reverseString(inputValue):
             result.textContent = `${inputValue} is a palindrome`
             break;
     default:
