@@ -6,18 +6,12 @@ check.addEventListener('click', () => {
    let inputValue = input.value
    let lowerCase = inputValue.toLowerCase()
    
-   function removeSpecialCharacter(str){
-        return str.replace(/[^\w\s]/gi, '');
-   }
-   const okay = "okay okay"
-   console.log(removeSpecialCharacter(okay))
-
-
    function reverseString(str) {
-    // Split the string into an array of characters, reverse the array, and join it back into a string
-        return str.split('').reverse().join('');
+        const replace = str.replace(/[^a-zA-Z0-9]/g, '');
+        console.log(replace)
+        return replace.split('').reverse().join('');
     }
-   switch (lowerCase) {
+   switch (reverseString(lowerCase)) {
         case "":
             result.textContent = "Please input a value"
             break;
