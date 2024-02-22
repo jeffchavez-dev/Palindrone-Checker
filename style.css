@@ -10,11 +10,51 @@
 :root {
     --bg: #000000;
     --white: #e0dcdc;
+    --accent: #7eea4c;
 
 }
 
 
 body {
     background-color: var(--bg);
-    color: var(--white)
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5em;
 }
+
+.main {
+    padding: 2em;
+    margin: auto;
+}
+
+h1 {
+    color: var(--accent)
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    gap: 1em;
+    padding: 1em;
+}
+
+
+input {
+    width: 250px;
+}
+
+button {
+   cursor: pointer;
+    padding: 10px;
+    background-color: var(--accent);
+    color: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+
+
+}
+
