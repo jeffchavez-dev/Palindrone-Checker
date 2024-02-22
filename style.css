@@ -9,9 +9,12 @@
 
 :root {
     --bg: #000000;
+    --white: #e0dcdc;
+
 }
 
 
 body {
     background-color: var(--bg);
+    color: var(--white)
 }
