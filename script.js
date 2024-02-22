@@ -1,5 +1,8 @@
 const check = document.getElementById("check-btn")
+const input = document.getElementById("text-input")
 
 check.addEventListener('click', () => {
-  alert('done')
+   if (input.value === "") {
+        alert("Please input a value")
+   }
 })
