@@ -13,7 +13,8 @@ check.addEventListener('click', () => {
     }
 
     const reversedValue = reverseString(inputValue)
-   if (reverseString === "") {
+
+   if (inputValue === "") {
             alert("Please input a value")
    } else if (reversedValue === inputValue) {
         result.textContent = `${inputValue} is a palindrome`
