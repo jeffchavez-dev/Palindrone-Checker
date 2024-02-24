@@ -7,7 +7,7 @@ check.addEventListener('click', () => {
    
    function reverseString(str) {
         const lowerCase = str.toLowerCase()
-        const cleanStr = lowerCase.replace(/[^a-z0-9 ]/g, '')
+        const cleanStr = lowerCase.replace(/[^a-z0-9_]/g, '')
      //    const cleanStr = lowerCase.replace(/[^a-z0-9 ]/g, '');
         console.log(cleanStr)
         return cleanStr.split('').reverse().join('');
