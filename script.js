@@ -12,7 +12,6 @@ check.addEventListener('click', () => {
         console.log(cleanStr)
         return cleanStr.split('').reverse().join('');
     }
-
     const reversedValue = reverseString(inputValue)
 
    if (inputValue === "") {
